@@ -1,0 +1,40 @@
+.btn__primary {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    // width: 150px;
+    // height: 40px;
+    border-radius: 100px;
+    background-color: $color-primary-light;
+    color: $color-white;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: $color-primary;
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(-1px);
+    background-color: $color-primary;
+  }
+}
+
+.btn__secondary {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid $color-primary-light;
+    background-color: $color-white;
+    color: $color-primary-light;
+  }
+}

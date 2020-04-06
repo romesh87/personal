@@ -1,0 +1,23 @@
+.contacts {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: $color-primary-light;
+    }
+
+    &:active {
+      color: $color-primary;
+    }
+  }
+}

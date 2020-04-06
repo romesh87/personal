@@ -1,0 +1,40 @@
+.header {
+  height: 95vh;
+  // background-image: linear-gradient(
+  //   to left,
+  //   $color-primary,
+  //   $color-primary-light
+  // );
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
+    ),
+    url('/img/webdev4.jpg');
+
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  padding: 2rem;
+
+  &__photo {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: moveintop--photo;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    & img {
+      height: 150px;
+      clip-path: circle(45%);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+}
