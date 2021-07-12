@@ -66,10 +66,44 @@
       transform: scale(1.1);
     }
 
+    &--icon-nextjs {
+      height: 7rem;
+      transition: all 0.2s ease-out;
+      filter: invert(9%) sepia(1%) saturate(1034%) hue-rotate(314deg) brightness(96%) contrast(72%);
+      @include respond(phone) {
+        height: 6rem;
+      }
+    }
+
+    &--icon-nextjs:hover {
+      transform: scale(1.1);
+    }
+
     &--label {
       font-size: 1.5rem;
       @include respond(phone) {
         font-size: 1.2rem;
+      }
+
+      & span {
+        @include respond(phone) {
+          display: block;
+        }
+      }
+    }
+
+    &--label-nextjs {
+      font-size: 1.5rem;
+      transform: translateY(-0.5rem);
+      @include respond(phone) {
+        font-size: 1.2rem;
+        transform: translateY(.5rem);
+      }
+
+      & span {
+        @include respond(phone) {
+          display: block;
+        }
       }
     }
   }
